@@ -1,0 +1,87 @@
+
+ LARABA Yamina Nesrine Acad B groupe 2 , matricule : 202031043730
+
+
+
+public class Enseignant {
+    String Matricule , Nom , Prenom , Adresse , Diplome;
+    ArrayList <Classe> C ; 
+    Matiere Matiere;
+
+    // Constructeur 
+    //  public void Afficher()
+    // public boolean IntervenirDansTousLesNiveaux()
+}
+
+public class EnsContractuel extends Enseignant {
+     LocalDate Date_Debut;
+    LocalDate Date_Fin;
+
+    // Constructeur 
+    //  public void Afficher()
+}
+public class EnsPermanent extends Enseignant {
+     LocalDate Date_Rec;
+    
+
+    // Constructeur 
+    //  public void Afficher()
+}
+
+public enum Jours {
+    Dimanche , Lundi , Mardi , Mercredi , Jeudi , Vendredi , Samedi;
+    
+}
+
+
+public class Matiere {
+    String Matiere;
+    //Constructeur
+}
+public class Salle {
+    String Salle;
+    //Constructeur
+}
+
+public class Niveau {
+    int Numero ; 
+     ArrayList <Matiere> M ;
+    //equals(Niveau N1 , Niveau N2)
+     }
+
+public class Seance {
+    Jours Jour;
+    int Creneau;
+    Salle Salle;
+    Matiere Matiere;
+
+
+    //Constructeur
+    //public Seance Comparaison (Seance S1 , Seance S2)
+    }
+
+public class Classe {
+    iveau niveau;
+    String Code;
+    ArrayList <Enseignant> E ; 
+    ArrayList <Seance> EmploiDuTemps;
+    /*  les 2 listes ont la meme taille et elles sont convenables : 
+    la 1ere seance de la 2eme liste est enseignee par le 1er enseignant de la 1ere liste ....etc
+    c a dire E[i] est l'enseignant de la seance EmploiDuTemps[i]
+    */
+    // Constructeur
+}
+
+public class College {
+    ArrayList <Enseignant> Enseignant;
+    ArrayList <Classe> Classe;
+    ArrayList <Salle> Salle;
+
+    //Constructeur
+    //public int NbrClasse()
+    //public ArrayList EnsP()
+    //public void Afficher()
+    //public void ClassePaNiveau()
+    //public Object Libre(Classe C)
+    //public void Horaire()
+}
